@@ -1,0 +1,26 @@
+# build output
+client/bin/
+client/obj/
+**/bin/
+**/obj/
+*.user
+
+# node
+server/node_modules/
+node_modules/
+
+# local config & runtime data (never commit these)
+.env
+server/.env
+server/auth/data/
+server/gameserver/bans.json
+
+# published binaries
+dist/
+*.pdb
+
+# editor / os
+.vs/
+.idea/
+.DS_Store
+Thumbs.db

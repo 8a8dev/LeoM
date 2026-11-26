@@ -1,0 +1,24 @@
+{
+  "name": "leom-server",
+  "version": "0.1.0",
+  "description": "LeoM multiplayer backend (master + auth + game server) by 8a8.dev",
+  "author": "8a8.dev (https://8a8.dev)",
+  "homepage": "https://8a8.dev",
+  "license": "Apache-2.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "master":          "node --env-file-if-exists=.env master/server.js",
+    "gameserver":      "node --env-file-if-exists=.env gameserver/server.js",
+    "auth":            "node --env-file-if-exists=.env auth/server.js",
+    "dev:master":      "node --watch --env-file-if-exists=.env master/server.js",
+    "dev:gameserver":  "node --watch --env-file-if-exists=.env gameserver/server.js",
+    "dev:auth":        "node --watch --env-file-if-exists=.env auth/server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
